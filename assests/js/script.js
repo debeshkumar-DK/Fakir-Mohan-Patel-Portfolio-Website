@@ -54,116 +54,6 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 
-
-// custom select variables
-// const select = document.querySelector("[data-select]");
-// const selectItems = document.querySelectorAll("[data-select-item]");
-// const selectValue = document.querySelector("[data-selecct-value]");
-// const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-// select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
-// for (let i = 0; i < selectItems.length; i++) {
-//   selectItems[i].addEventListener("click", function () {
-
-//     let selectedValue = this.innerText.toLowerCase();
-//     selectValue.innerText = this.innerText;
-//     elementToggleFunc(select);
-//     filterFunc(selectedValue);
-
-//   });
-// }
-
-// // filter variables
-// const filterItems = document.querySelectorAll("[data-filter-item]");
-
-// const filterFunc = function (selectedValue) {
-
-//   for (let i = 0; i < filterItems.length; i++) {
-
-//     if (selectedValue === "all") {
-//       filterItems[i].classList.add("active");
-//     } else if (selectedValue === filterItems[i].dataset.category) {
-//       filterItems[i].classList.add("active");
-//     } else {
-//       filterItems[i].classList.remove("active");
-//     }
-
-//   }
-
-// }
-
-// add event in all filter button items for large screen
-// let lastClickedBtn = filterBtn[0];
-
-// for (let i = 0; i < filterBtn.length; i++) {
-
-//   filterBtn[i].addEventListener("click", function () {
-
-//     let selectedValue = this.innerText.toLowerCase();
-//     selectValue.innerText = this.innerText;
-//     filterFunc(selectedValue);
-
-//     lastClickedBtn.classList.remove("active");
-//     this.classList.add("active");
-//     lastClickedBtn = this;
-
-//   });
-
-// }
-
-
-
-// Remove event listeners for form input fields
-// for (let i = 0; i < formInputs.length; i++) {
-//   formInputs[i].removeEventListener("input", null);
-// }
-
-// // Remove event listener for form button
-// formBtn.removeEventListener("click", null);
-
-// // Enable the form button
-// formBtn.removeAttribute("disabled");
-
-// // Modify the form action attribute to use Formspree endpoint
-// form.setAttribute("action", "https://formspree.io/f/xleqwywp");
-
-// const form = document.querySelector("[data-form]");
-// const formInputs = document.querySelectorAll("[data-form-input]");
-// const formBtn = document.querySelector("[data-form-btn]");
-
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault(); // Prevent default form submission
-  
-//   // Check form validity
-//   if (form.checkValidity()) {
-//     const formData = new FormData(form); // Serialize form data
-    
-//     // Send form data to Formspree endpoint
-//     fetch("https://formspree.io/prime.darkknight01@gmail.com", {
-//       method: "POST",
-//       body: formData
-//     })
-//     .then(response => {
-//       if (response.ok) {
-//         // Handle successful submission
-//         console.log("Form submitted successfully!");
-//         // Optionally, redirect the user to a thank you page
-//       } else {
-//         // Handle errors
-//         console.error("Error submitting form:", response.statusText);
-//       }
-//     })
-//     .catch(error => {
-//       console.error("Error submitting form:", error);
-//     });
-//   }
-// });
-
-
-
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
@@ -185,3 +75,37 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+const startYear = 2020;
+const startMonth = 8; // September (0-based)
+
+const now = new Date();
+let years = now.getFullYear() - startYear;
+let months = now.getMonth() - startMonth;
+
+if (months < 0) {
+  years -= 1;
+  months += 12;
+}
+
+let text = '';
+if (years > 0) text += `${years} yr${years > 1 ? 's' : ''}`;
+if (years > 0 && months > 0) text += ' ';
+if (months > 0) text += `${months} mo${months > 1 ? 's' : ''}`;
+
+document.getElementById("exp-years").textContent = text;
+
+
+const careerStartYear = 2015;
+const careerStartMonth = 8; // September (0-based)
+
+const today = new Date();
+let expYears = today.getFullYear() - careerStartYear;
+if (today.getMonth() < careerStartMonth) {
+  expYears -= 1;
+}
+
+document.getElementById("dynamic-experience").textContent = expYears;
+
+document.getElementById("footer-year").textContent = new Date().getFullYear();
+
