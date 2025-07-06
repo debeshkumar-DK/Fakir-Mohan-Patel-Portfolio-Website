@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fakir Mohan Patel's Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="assests/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="images/profile-pic.png"
+              alt="Fakir Mohan Patel"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Fakir Mohan Patel">Fakir Mohan Patel</h1>
+
+            <p class="title">Assistant Manager - Civil</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=patel.fakirmohanjobs@gmail.com"
+                  target="_blank"
+                  >patel.fakirmohanjobs@gmail.com</a
+                >
+
+                
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="mob:+91 9777307274" class="contact-link"
+                  >+91 9777307274</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1992-07-08">July 08, 1992</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Dumka,Jharkhand</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/fakir-mohan-patel-158a701a0/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://twitter.com/FAKIR_MOHAN_"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/fakirmohan.patel.94"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/fakir_mohan_patel/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <div class="custom-sidebar">
+              <h1 style="color: #e5e5e5; font-size: 14px">Hi I'm</h1>
+              <br />
+              <h1 style="color: #fed700; font-size: 3rem">Fakir Mohan Patel</h1>
+              <br />
+              <p class="custom-sidebar-content">
+                <!-- Your text goes here -->
+                Welcome to my portfolio website! As a civil engineer, I'm driven
+                by a passion for innovative solutions and pushing the boundaries
+                of infrastructure. With over <span id="dynamic-experience">10</span> years of dynamic and
+                results-oriented experience in project management, I am a
+                seasoned professional known for spearheading complex
+                construction projects with precision and finesse. My expertise
+                lies in seamlessly integrating on-site execution with meticulous
+                office responsibilities, ensuring flawless project delivery in
+                the High Raised Building, Water Treatment Plant (WTP), Concrete
+                & Bitumen Roads, Tunnel & Rail Lines, Short Span Bridge &
+                Culverts, Sewage Treatment Plant (STP), Water Pipe Lines,
+                MV/HV/EHV/UHV AIS & GIS Sub-Stations and Transmission Lines
+                sectors.
+                <br /><br />
+                Recognized for exceptional leadership, I have a proven track
+                record of successfully managing multimillion-rupee initiatives
+                from conception to completion. My relentless pursuit of
+                excellence has enabled me to consistently deliver high-quality
+                results within tight timelines and budget constraints, earning
+                the trust and admiration of stakeholders.
+                <br /><br />
+                As a strategic thinker with a robust background in civil
+                engineering, I excel in driving project success through
+                meticulous planning, resource optimization, and effective
+                coordination with stakeholders, contractors, and suppliers. I
+                possess a natural knack for negotiating favorable terms while
+                maintaining unwavering commitment to industry standards and
+                safety protocols.
+                <br /><br />
+                Passionate about innovation and continuous improvement, I thrive
+                in challenging environments where I can leverage cutting-edge
+                methodologies to drive efficiency and exceed project objectives.
+                My dedication to client satisfaction and my ability to deliver
+                exceptional results position me as a valuable asset ready to
+                make a significant impact in any project environment.
+              </p>
+            </div>
+          </section>
+
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <div class="btn-group">
+            <a
+              href="https://drive.google.com/file/d/1vIaAVUHkZwSGIN-ds82kqC1DugqJa6DY/view"
+              class="btn active"
+              target="_blank"
+              >Download Resume</a
+            >
+          </div>
+
+          <div class="btn-group">
+            <a
+              href="https://drive.google.com/file/d/1vEEOd50glD5klkkR7TpMOUdnLFS_YZiS/view"
+              class="btn active"
+              target="_blank"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download CV</a
+            >
+          </div>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Assistant Manager - Civil <br />M/s Feedback Infra Private
+                  Limited &nbsp;· Full-time
+                </h4>
+
+                <span class="job-info">Sep 2020 - Present · <span id="exp-years">0 yrs</span><br> Ranchi, Jharkhand, India · On-site</span>
+
+
+                <p class="timeline-text">
+                  Project Name: - Construction of 6 no’s 132/33kV AIS & 1 no’s
+                  132/33kV GIS Grid Sub Station & 10 no’s 132kV Double Circuit
+                  Transmission Lines for Jharkhand Power System Improvement
+                  Project.<br />
+                  Client Name: - Jharkhand Urja Sanchar Nigam Limited
+                  (JUSNL).<br /><br />
+                  Project Name: - Augmentation and strengthening of Dumka water
+                  supply scheme under Dumka Nagar Parishad Project.<br />
+                  Client Name: - Jharkhand urban infrastructure development
+                  company limited (JUIDCO).<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Assistant Project Manager - Civil<br />
+                  M/s. Srinibas Pradhan &nbsp;· Full-time
+                </h4>
+
+                <span
+                  >Jun 2019 - Sep 2020 &nbsp;· 1 yr 4 mos<br />
+                  Jharsuguda, Odisha, India &nbsp;· On-site</span
+                >
+
+                <p class="timeline-text">
+                  Project Name: - WTP, STP, Reservoir, Tunnel Kiln & 33/11kV Sub
+                  Station Building Projects at TRL Krosaki Refractories Limited,
+                  Ghumadera - Belpahar, Jharsuguda, Odisha in side plant &
+                  Outside plant of town ship area.<br />
+                  Client Name: - TATA Refractories Limited Krosaki Refractories
+                  Limited (TRLK).
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Assistant Manager - Civil <br />
+                  Flowmore Limited &nbsp;· Full-time
+                </h4>
+
+                <span
+                  >Aug 2017 - Jun 2019 &nbsp;· 1 yr 11 mos<br />
+                  Bhubaneswar &nbsp;· On-site</span
+                >
+
+                <p class="timeline-text">
+                  Project Name: - Construction of 4no’s 220/132/33kV Grid Sub
+                  Station & 4no’s 132/33kV Grid Sub Station For Odisha Power
+                  System Improvement Project.<br />
+                  Client Name: - Odisha Power Transmission Corporation Limited
+                  (OPTCL).
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Project Engineer - Civil <br />
+                  SIDDHARTHA ENGINEERING LIMITED &nbsp;· Full-time
+                </h4>
+
+                <span
+                  >Nov 2016 - Jul 2017 &nbsp;· 9 mos<br />
+                  Bhubaneswar &nbsp;· On-site</span
+                >
+
+                <p class="timeline-text">
+                  Project Name: - Construction of 2 Nos. G+5 Storage Building
+                  Construction in Patrapada, Bhubaneswar and total 11 Nos.
+                  Substation (132/33 kV Sub-station) AIS & GIS, EPC Project.<br />
+                  Client Name: - Odisha Power Transmission Corporation Limited
+                  (OPTCL) & West Bengal State Electricity Transmission Company
+                  Limited (WBSETCL).
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Assistant Engineer - Civil <br />
+                  Shreem Electric Ltd &nbsp;· Full-time
+                </h4>
+
+                <span
+                  >Aug 2015 - Nov 2016 &nbsp;· 1 yr 4 mos<br />
+                  Lapanga- Jharsuguda, Atri-Khordha, Bhubaneswar, Odisha &
+                  Richur, Bangalore, Karnataka· On-site</span
+                >
+
+                <p class="timeline-text">
+                  Project Name: - Construction of 20 nos. 33 kV Capacitor Bank
+                  Project all over Odisha under OPTCL, 2 nos. 220/132/33 kV AIS
+                  Substation at Lapanga, Jharsuguda & Atri, Khaordha under OPTCL
+                  & 30 nos. 11 kV Capacitors Bank for KPTCL & 110/11 kV S/S
+                  Project, Karnataka, Raichure, Googal for KPTCL.<br />
+                  Client Name: - Odisha Power Transmission Corporation Limited
+                  (OPTCL) & Karnataka Power Transmission Corporation Limited
+                  (KPTCL)
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Collage Name: - Spintronic Technology and Advanced Research
+                  (STAR), Taraboi, Bhubaneswar <br />
+                  University Name: - Biju Patnaik University of Technology,
+                  Rourkela, Odiaha.
+                </h4>
+
+                <span
+                  >Bachelor's degree (B – Tech) &nbsp;· Civil Engineering</span
+                >
+
+                <span>Sep 2012 – Aug 2015</span>
+
+                <p class="timeline-text">
+                  Grade: - First Division<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Collage Name: - Gurukrupa Technical School, Narsingghpur,
+                  Cuttack<br />
+                  University Name: - State Council for Technical Education &
+                  Vocational Training.
+                </h4>
+
+                <span>Diploma &nbsp; · Civil Engineering</span>
+
+                <span>Jul 2008 - Jul 2012</span>
+
+                <p class="timeline-text">
+                  Grade: - First Division<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Collage Name: - Maharaja High School, Sonepur<br />
+                  University Name: - Board of Secondary Education, Odisha
+                </h4>
+
+                <span>High School</span>
+
+                <span>Jul 2007 - Jul 2008</span>
+
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Building Information Modeling (BIM) (Autodesk Revit or
+                    Bentley MicroStation)
+                  </h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Possess knowledge of Project Management Software (Microsoft
+                    Project, Primavera P6)
+                  </h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    STAADPro Software (STAAD Pro 3D Structural Analysis And
+                    Design Software)
+                  </h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AutoCAD Software (AutoDesk AutoCAD)</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Data Analysis and Reporting (Microsoft Office/Excel or
+                    Google Sheets),
+                  </h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title"><br />Soft skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Presentation Software (Microsoft PowerPoint, Prezi & Photo
+                    Shop)
+                  </h5>
+                  <data value="95">95%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Collaboration and Communication Tools (Microsoft Teams,
+                    Slack or Asana)
+                  </h5>
+                  <data value="95">95%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Risk Management and Decision Support Tools (Palisade @RISK
+                    or Oracle Primavera Risk Analysis)
+                  </h5>
+                  <data value="95">95%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORJECTS
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Project Name: - 132kV Double Circuit Transmission Lines, AIS &
+                  GIS Sub – Station.<br />
+                  Client Name: - Jharkhand Urja Sanchar Nigam Limited
+                  (JUSNL).<br />
+                  PMC Name: - M/s Feedback Infra Private Limited.<br />
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Project Details:<br />
+                    • 132/33 kV GSS at Shikaripara (2x50 MVA).<br />
+                    • 132 kV D/C 3 Ph. Dumka - Shikaripara Transmission line.<br />
+                    • 132/33 kV GSS at Jarmundi (2x50 MVA).<br />
+                    • LILO of 132 kV D/C 3 Ph. Dumka Deoghar Transmission line
+                    at GSS Jarmundi.<br />
+                    • 1 132/33 kV GSS at Amrapara (2x50 MVA).<br />
+                    • 132 kV D/C 3 Ph. Amrapara Godda.<br />
+                    • 132 kV D/C 3 Ph. Amrapara - Pakur Transmission line.<br />
+                    • 132/33 kV GSS at Hansdiha (2x50 MVA).<br />
+                    • 2 LILO of 132 kV Lalmatia-Dumka Transmission Line at GSS
+                    Hansdiha.<br />
+                    • 132 kV D/C Hansdiha - Jasidih Transmission Line.<br />
+                    • 132/33 kV GSS at Narayanpur (Devipur) 2x50 MVA.<br />
+                    • 2 LILO of 132 kV D/C 3 ph. Jamtara Madhupur Transmission
+                    Line at Narayanpur (Devipur).<br />
+                    • 132/33 kV GIS at Sarath (2x50 MVA).<br />
+                    • 132 kV D/C Sarath-Palojori Transmission Line.<br />
+                    • 132 kV D/C Sarath-Chitra Transmission Line.<br />
+                  </p>
+
+                  <br />
+                </div>
+              </div>
+            </li>
+
+            <br />
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Project Name: - Augmentation and strengthening of Dumka water
+                  supply scheme under Dumka Nagar Parishad Project.<br />
+                  Client Name: - Jharkhand urban infrastructure development
+                  company limited (JUIDCO).<br />
+                  PMC Name: - M/s Feedback Infra Private Limited.<br />
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Project Details:<br />
+                    • Augmentation and strengthening of Dumka water supply
+                    scheme under Dumka Nagar Parishad Project under client
+                    Jharkhand urban infrastructure development company limited
+                    (JUIDCO).<br />
+                    Scope of Work:<br />
+                    • Pipe laying Line length-(100mm to 600mm dia.) Approx. 230
+                    km. RCC Elevated Service Reservoir & Gravity Service
+                    Reservoir (4 no’s RCC water Tower/sump capacity of 15.5lakh,
+                    4lakh, 1.5lakh, 1 lakh) and House distribution connection of
+                    10,000 no’s, Water Treatment Plant- 7MLD, Approach bridge
+                    cum Gangway.<br />
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <br />
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Project Name: - WTP, STP, Reservoir, Tunnel Kiln & 33/11kV Sub
+                  Station Building Projects at TRL Krosaki Refractories Limited,
+                  Ghumadera - Belpahar, Jharsuguda, Odisha in side plant &
+                  Outside plant of town ship area.<br />
+                  Client Name: - TATA Refractories Limited Krosaki Refractories
+                  Limited (TRLK). Agency Name: - M/s Srinibas Pradhan.<br />
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Project Details:<br />
+                    • Pipe laying Line length-(100mm to 600mm dia.) Approx. 30
+                    km. RCC Elevated Service Reservoir & Gravity Service
+                    Reservoir (4 no’s RCC water Tower/sump capacity of 5.5lakh,
+                    4lakh, 1.5lakh, 1 lakh) and House distribution connection of
+                    1,000 no’s, Water Treatment Plant- 7MLD, Approach bridge cum
+                    Gangway.<br />
+                    • Construction of 3 no’s Dolomite Tunnel Kiln 100 meter each
+                    & 4 no’s Storage Yards with CR-80 Crain Rail Lines 1acre
+                    1000 meter each & Construction of 2 no’s 33/11kV Sub Station
+                    G+3 Building Projects with installation of 4 no’s 33/11kV
+                    Transformer inside the plant.<br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <br />
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Project Name: - Construction of 4no’s 220/132/33kV Grid Sub
+                  Station & 4no’s 132/33kV Grid Sub Station Odisha Power System
+                  Improvement Project.<br />
+                  Client Name: - Odisha Power Transmission Corporation Limited
+                  (OPTCL).<br />
+                  Agency Name: - M/s Flowmore Limited.<br />
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Project Details:<br />
+                    • 220/132/33 kV GSS at Aska (2x100MVA) & (2x50 MVA) each
+                    GSS.<br />
+                    • 220/132/33 kV GSS at Chikiti (2x100MVA) & (2x50 MVA) each
+                    GSS.<br />
+                    • 220/132/33 kV GSS at Kalimela (2x100MVA) & (2x50 MVA) each
+                    GSS.<br />
+                    • 220/132/33 kV GSS at Jayapatna (2x100MVA) & (2x50 MVA)
+                    each GSS.<br />
+                    • 132/33 kV GSS at Sathasankha (2x50 MVA) each GSS.<br />
+                    • 132/33 kV GSS at Tirtol (2x50 MVA) each GSS.<br />
+                    • 132/33 kV GSS at Jayanagar (2x50 MVA) each GSS.<br />
+                    • 132/33 kV GSS at Baliguda (2x50 MVA) each GSS.<br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <br />
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Project Name: - Construction of 2 Nos. G+5 Storage Building
+                  Construction in Patrapada, Bhubaneswar and total 11 Nos.
+                  Substation (132/33 kV Sub-station) AIS & GIS, EPC Project.<br />
+                  Client Name: - Odisha Power Transmission Corporation Limited
+                  (OPTCL) & West Bengal State Electricity Transmission Company
+                  Limited (WBSETCL).<br />
+                  Agency Name: - M/s Siddhartha Engineering Limited.<br />
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Project Details:<br />
+                    • Execution of 400KV Transmission Line Meramundali in Odisha
+                    for OPTCL.<br />
+                    • Execution of 132 GIS Sub-station at Indus for WBSETCL,
+                    Kolkata.<br />
+                    • Execution of 220KV Sub-station & Transmission Line at
+                    Gunupur, Odisha for OPTCL.<br />
+                    • Execution of 132KV Sub-station & Transmission Line at
+                    Bahugram, Odisha for OPTCL.<br />
+                    • Execution of 132KV Sub-station & Transmission Line at
+                    Nabarangpur, for OPTCL.<br />
+                    • Execution of Bay Extension of 132 GIS Sub-station at
+                    Rampurhat for WBSETCL, Kolkata.<br />
+                    • Execution of Bay Extension of 132 GIS Sub-station at
+                    Asansol for WBSETCL, Kolkata.<br />
+                    • Execution of Bay Extension of 132 GIS Sub-station at New
+                    Town for WBSETCL, Kolkata.<br />
+                    • Execution of Bay Extension of 132 GIS Sub-station at Falta
+                    for WBSETCL, Kolkata.<br />
+                    • Execution of Bay Extension of 132 GIS Sub-station at Kasba
+                    for WBSETCL, Kolkata.<br />
+                    • Execution of Bay Extension of 132 GIS Sub-station at
+                    Sainthia for WBSETCL, Kolkata.<br />
+                    • 2 Nos. G+5 Storage Building Construction in Patrapada,
+                    Bhubaneswar.<br />
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <br />
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                  Project Name: - Construction of 20 nos. 33 kV Capacitor Bank
+                  Project all over Odisha under OPTCL, 2 nos. 220/132/33 kV AIS
+                  Substation at Lapanga, Jharsuguda & Atri, Khaordha under OPTCL
+                  & 30 nos. 11 kV Capacitors Bank for KPTCL & 110/11 kV S/S
+                  Project, Karnataka, Raichure, Googal for KPTCL.<br />
+                  Client Name: - Odisha Power Transmission Corporation Limited
+                  (OPTCL) & Karnataka Power Transmission Corporation Limited
+                  (KPTCL)<br />
+                  Agency Name: - M/s Shreem Electric Limited.<br />
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Project Details:<br />
+                    • Execution of 220KV Sub - Station & Transmission Line at
+                    Atri, Khordha in Odisha for OPTCL.<br />
+                    • Execution of 220KV Sub - Station & Transmission Line at
+                    Lapanga, Jharsuguda in Odisha for OPTCL.<br />
+                    • Execution of 132KV Double Circuit Transmission Line Kochi
+                    to Jaleswear in Odisha for OPTCL.<br />
+                    • Execution of 132KV Multi Circuit Transmission Line Atri to
+                    Tirtol in Odisha for OPTCL.<br />
+                    • Execution of 20 nos. 33 kV Capacitor Bank Project all over
+                    Odisha for OPTCL.<br />
+                    • 30 nos. 11 kV Capacitors Bank for KPTCL.<br />
+                    • 110/11 kV S/S Project, Karnataka, Raichure, Googal for
+                    KPTCL.<br />
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- </ul> -->
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  132kV Double Circuit Transmission Lines132kV Double Circuit
+                  Transmission Lines<br />
+                  Associated with Feedback INFRA
+                </h4>
+
+                <div data-modal-text>
+                  <p>
+                    Project Details: • 132/33 kV GSS at Shikaripara (2x50
+                    MVA).<br />
+                    • 132 kV D/C 3 Ph. Dumka - Shikaripara Transmission line.<br />
+                    • 132/33 kV GSS at Jarmundi (2x50 MVA).<br />
+                    • LILO of 132 kV D/C 3 Ph. Dumka – Deoghar Transmission line
+                    at GSS Jarmundi.<br />
+                    • 1 132/33 kV GSS at Amrapara (2x50 MVA).<br />
+                    • 132 kV D/C 3 Ph. Amrapara – Godda.<br />
+                    • 132 kV D/C 3 Ph. Amrapara - Pakur Transmission line.<br />
+                    • 132/33 kV GSS at Hansdiha (2x50 MVA).<br />
+                    • 2 LILO of 132 kV Lalmatia-Dumka Transmission Line at GSS
+                    Hansdiha.<br />
+                    • 132 kV D/C Hansdiha - Jasidih Transmission Line.<br />
+                    • 132/33 kV GSS at Narayanpur (Devipur) 2x50 MVA.<br />
+                    • 2 LILO of 132 kV D/C 3 ph. Jamtara – Madhupur Transmission
+                    Line at Narayanpur (Devipur).<br />
+                    • 132/33 kV GIS at Sarath (2x50 MVA).<br />
+                    • 132 kV D/C Sarath-Palojori Transmission Line.<br />
+                    • 132 kV D/C Sarath-Chitra Transmission Line.<br />
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          
+        </article>
+
+        
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116385.06909232704!2d87.17444941063141!3d24.27556359301199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1710094668239!5m2!1sen!2sin"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://formspree.io/f/xkndvlvd"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" enabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+
+    <footer class="site-footer">
+  <span class="footer-text">
+    &copy; <span id="footer-year" class="footer-year-span"></span> Fakir Mohan Patel. All rights reserved.
+  </span>
+</footer>
+
+
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="assests/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/07/04/17/20250704175215-00Z0T6MW.js" defer></script>
+  </body>
+</html>
